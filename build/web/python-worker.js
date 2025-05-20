@@ -34,8 +34,5 @@ self.onmessage = async (event) => {
         self.documentUrl = event.data.documentUrl;
         self.pythonModuleName = event.data.pythonModuleName;
         await self.initPyodide();
-    } else {
-        // message
-        flet_js.send(event.data);
     }
 };
